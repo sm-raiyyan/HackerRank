@@ -1,0 +1,7 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
+#convert list into set to remove the max element
+r = set(arr)
+r.remove(max(r))
+print(max((r)))
