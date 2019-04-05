@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        #keeps taking the numericals after name until we give another name
+        #when we give another name, the name and numericals are stored in the dictonary
+        name, *line = input().split()
+        
+        #mapping the float to the numericals
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    
+    #getting the score for given query_name
+    score = student_marks[query_name]
+    
+    #limiting the value to 2 decimals and displaying the average 
+    print("{0:.2f}".format(sum(score)/len(score)))
