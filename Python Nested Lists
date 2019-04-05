@@ -1,0 +1,21 @@
+if __name__ == '__main__':
+    score = []
+    a = []
+    for _ in range(int(input())):
+        name = input()
+        score.append([name, float(input())])
+    
+    #taking all the marks in a set
+    min_set = set((marks) for name, marks in score)
+    
+    #removing the least score
+    min_set.remove(min(min_set))
+    
+    #calcluating the least score(second least)
+    sec_low = min(min_set)
+    
+    for name, marks in score:
+        if marks == sec_low:
+            a.append(name)
+    for name in sorted(a):
+        print(name)
