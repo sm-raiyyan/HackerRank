@@ -1,0 +1,5 @@
+n = int(input())
+#takes the input value which is of type int and returns a map object which is converted into a tuple
+#named integer_list
+integer_list = tuple(map(int, input().split()))
+print(hash(integer_list))
