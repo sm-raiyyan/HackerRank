@@ -9,4 +9,5 @@ for _ in range(n):
     else:
         #l.{}({}) represents l.append(1) and we give 2 parameters in format so as to
         #match with the two placeholders. we also join the int with a ','(second parameter)
+        #we join the two values with ',' as insert(index, element) takes exacly two elements
         eval("l.{}({})".format(op, ','.join(line)))
