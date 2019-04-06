@@ -1,0 +1,12 @@
+n = int(input())
+l = []
+#We are using '_' as an iterator here so as to make sure we don't use it anywhere else in the program
+for _ in range(n):
+    #First string followed by int. If string is given as input, then program moves to next line
+    op, *line = input().split()
+    if op == 'print':
+        print(l)
+    else:
+        #l.{}({}) represents l.append(1) and we give 2 parameters in format so as to
+        #match with the two placeholders. we also join the int with a ','(second parameter)
+        eval("l.{}({})".format(op, ','.join(line)))
