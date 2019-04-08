@@ -1,0 +1,33 @@
+def minion_game(string):
+    # your code goes here
+    stuart_score, kevin_score = 0, 0
+    length = len(string)
+    #getting all the combinations of substrings into list r
+    r = [string[i:j+1] for i in range(length) for j in range(i,length)]
+    
+    #all words which start with a vowel into list p
+    p = [word for word in r if word[0] in 'AEIOU']
+    #all words which start with a consonant into list q
+    q = [word for word in r if word[0] not in 'AEIOU']
+    
+    #loop to find is the vowel substrings are present in give string 
+    for i in p:
+        if (string.find(i) != -1): 
+            kevin_score+=1
+        else: 
+            continue 
+    #loop to find is the consonant substrings are present in give string 
+    for j in q:
+        if (string.find(j) != -1): 
+            stuart_score+=1
+        else: 
+            continue 
+    if kevin_score > stuart_score:
+        print("Kevin",kevin_score)
+    elif kevin_score < stuart_score:
+        print("Stuart",stuart_score)
+    else:
+        print("Draw")
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
