@@ -1,0 +1,21 @@
+def merge_the_tools(string, k):
+    # your code goes here
+    r = []
+    for i in range(0, len(string), k):
+        r.append(string[i:i+k])
+    for j in r:
+        #converting each element of list into a set
+        p = set(j)
+        #iterating through the substring j
+        #for instance first value of j is AAB (input is AABCAAADA 3)
+        for k in j:
+            #checking if every substring in the string j is present in set p
+            if k in p:
+                print(k, end="")
+                #remove that substring from the set p after printing it
+                p.remove(k)
+        print()
+
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
