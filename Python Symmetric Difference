@@ -1,0 +1,14 @@
+m = int(input())
+a = set(map(int, input().split()))
+n = int(input())
+b = set(map(int, input().split()))
+#symmetric difference of a and b
+x = a.difference(b)
+#symmetric difference of b and a
+y = b.difference(a)
+#calculating union and sorting it
+z = sorted(x.union(y))
+
+#displaying the elements in ascending order
+for i in z:
+    print(i)
