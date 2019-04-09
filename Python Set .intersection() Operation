@@ -7,4 +7,4 @@ m = int(input())
 b = set(map(int, input().split()))
 
 # displaying the length of the union set of a and b
-print(len(a.intersection(b)))
+print(len(a&b))
