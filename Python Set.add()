@@ -1,0 +1,3 @@
+n = int(input())
+# using list comprehensions and printing the length of set after converting it from list
+print(len(set([input() for i in range(n)])))
