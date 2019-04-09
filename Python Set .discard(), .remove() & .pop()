@@ -1,0 +1,12 @@
+n = int(input())
+r = set(map(int, input().split()))
+m = int(input())
+for _ in range(m):
+    
+    # * expands the list or tuple to positional arguments
+    # [''] ensrues that the list always has 2 elements at least
+    # As pop doesn't need any argument, it is taken as empty ['pop', '']
+    # But remove takes an argument, it looks like ['remove', '3', '']
+    # Here, the extra element doesn't matter as we only take 0 and 1 elements
+    eval("r.{0}({1})".format(*input().split()+['']))
+print(sum(r))
