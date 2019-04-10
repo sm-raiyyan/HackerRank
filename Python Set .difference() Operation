@@ -1,5 +1,11 @@
 a = int(input())
+
+# mapping all the input values as int in a single line
 m = set(map(int, input().split()))
 b = int(input())
+
+# mapping all the input values as int in a single line
 n = set(map(int, input().split()))
+
+# displaying the length of the union set of m and n
 print(len(m.difference(n)))
