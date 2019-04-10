@@ -1,0 +1,8 @@
+a = int(input())
+m = set(map(int, input().split()))
+b = int(input())
+for _ in range(b):
+    # 0th position contains the operation and next all the values that are newly 
+    # being added are taken using the map function
+    eval("m.{0}({1})".format(input().split()[0], set(map(int, input().split()))))
+print(sum(m))
