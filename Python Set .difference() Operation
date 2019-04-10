@@ -8,4 +8,4 @@ b = int(input())
 n = set(map(int, input().split()))
 
 # displaying the length of the union set of m and n
-print(len(m.difference(n)))
+print(len(m-n))
