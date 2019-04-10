@@ -1,0 +1,11 @@
+m = int(input())
+
+# mapping all the input values as int in a single line
+a = set(map(int, input().split()))
+m = int(input())
+
+# mapping all the input values as int in a single line
+b = set(map(int, input().split()))
+
+# # displaying the length of the union set of a and b
+print(len(a.symmetric_difference(b)))
