@@ -1,0 +1,17 @@
+n = int(input())
+for _ in range(n):
+    
+    # no of elements in set a
+    a = int(input())
+    
+    # taking elements into set a
+    a_set = set(map(int, input().split()))
+    
+    # no of elements in set a
+    b = int(input())
+    
+    # taking elements into set a
+    b_set = set(map(int, input().split()))
+    
+    # display the output
+    print(a_set.issubset(b_set))
