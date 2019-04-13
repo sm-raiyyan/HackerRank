@@ -1,0 +1,12 @@
+a_set = set(map(int, input().split()))
+
+# storing length of a_set
+p = len(a_set)
+for _ in range(int(input())):
+    b_set = set(map(int, input().split()))
+    
+    # taking the union of a_set and b_set and storing in a_set
+    a_set = a_set.union(b_set)
+    
+# if the length is same, prints true. Else, false    
+print(p is len(a_set))
