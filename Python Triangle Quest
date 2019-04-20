@@ -1,0 +1,4 @@
+for i in range(1,int(input())): 
+    
+    # 10**1 is 10. 10//9 is 1. 1*1 is 1
+    print(((10**i)//9)*i)
