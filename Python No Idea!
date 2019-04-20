@@ -1,0 +1,28 @@
+# taking the size of array(n) and size of set A and set B
+n, m = map(int, input().split())
+
+# taking elements into the array
+array = list(map(int, input().split()))
+
+# taking elements into set A
+set_a = set(map(int, input().split()))
+
+# taking elements into set A
+set_b = set(map(int, input().split()))
+
+# initializing hap with 0
+hap = 0
+
+# checking each element in the array using for loop
+for element in array:
+    
+    # incrementing hap if the element is in set A
+    if element in set_a:
+        hap = hap+1
+    
+    # decrementing hap if the element is in set B
+    elif element in set_b:
+        hap = hap-1
+    else:
+        continue
+print(hap)
