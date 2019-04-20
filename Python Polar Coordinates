@@ -1,0 +1,8 @@
+import cmath
+
+# taking the input as complex number
+z = complex(input())
+
+# printing each coordinate from the tuple
+for coordinate in (cmath.polar(z)):
+    print(coordinate)
