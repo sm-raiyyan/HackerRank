@@ -1,0 +1,6 @@
+a, b, c = int(input()), int(input()), int(input())
+print(pow(a, b))
+
+# c is the mod which is applied to (a**b)
+# pow(2,3,7) is 2**3 = 8 and 8%7 is 1
+print(pow(a, b, c))
