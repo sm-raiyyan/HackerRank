@@ -1,0 +1,9 @@
+from itertools import product
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+# calculating and storing the cartesian products in list
+l = tuple(product(a, b))
+for item in l:
+    print(item,"", end = "")
