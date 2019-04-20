@@ -1,0 +1,10 @@
+from itertools import combinations_with_replacement
+
+st, a = input().split()
+
+# storing all the combinations of sorted string length a
+r = list(combinations_with_replacement(sorted(st), int(a)))
+for i in r:
+    
+    # joining every element in list without space
+    print(''.join(i))
