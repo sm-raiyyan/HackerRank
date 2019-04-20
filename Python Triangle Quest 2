@@ -1,0 +1,4 @@
+for i in range(1,int(input())+1):
+    
+    # 10**2 - 1 is 99. 99//9 is 11 and 11**2 is 121
+    print(((((10**i)-1))//9)**2) 
