@@ -1,0 +1,2 @@
+# taking input and calculating the sum of powers simultaneously
+print((pow(int(input()), int(input()))) + pow(int(input()), int(input())))
