@@ -1,0 +1,8 @@
+import math
+a_len, b_len = int(input()), int(input()) 
+
+# arc tangent is used to find the inverse angle
+r = math.atan(a_len/b_len)
+
+# converting into degrees
+print("round(math.degrees(r))," end = "°")
