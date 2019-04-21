@@ -1,0 +1,12 @@
+from itertools import combinations
+
+st, a = input().split()
+
+# looping from 1 to a+1 as default i value is 0
+for i in range(1, int(a)+1):
+    
+    # taking the combinations of each size upto size a. 
+    for items in combinations(sorted(st), i):
+        
+        # joining every element in list without space
+        print(''.join(items))
