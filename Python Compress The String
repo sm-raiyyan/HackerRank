@@ -1,0 +1,11 @@
+from itertools import groupby
+
+r = []
+
+# j is the iterator and i stores every element that changes while accessing 
+for i,j in groupby(input()):
+    
+    # is list has 555 then
+    # this appends in the form (3, 5)
+    r.append((len(list(j)),int(i)))
+print(*r)
