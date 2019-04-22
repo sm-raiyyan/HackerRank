@@ -1,0 +1,13 @@
+from itertools import combinations
+
+_ = int(input())
+t = input().split()
+length = int(input())
+
+# storing all the combinations of the string(length is len) of in list r
+r = list(combinations(t, length))
+
+# using list comprehensions and storing the items in list p from list r which have 'a' in it.
+p = [item for item in r if 'a' in item]
+#print(len(p))
+print(len(p)/len(r))
