@@ -1,0 +1,17 @@
+from itertools import product
+
+k, m = map(int,input().split())
+r = []
+for _ in range(k):
+    
+    # [1:] - is used as the first element signifies the no of elements and we don't need that 
+    r.append(list(map(int, input().split()))[1:])
+    
+# storing all the cartesian products in the list p    
+p = list(product(*r))
+t = []
+for item in p:
+    
+    # calculating the max of every item in list p into t
+    t.append(sum(num**2 for num in item)%m)
+print(max(t))
