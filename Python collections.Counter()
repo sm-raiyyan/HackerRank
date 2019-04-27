@@ -1,0 +1,17 @@
+_ = int(input())
+
+# storing the sizes of shoes in a list
+shoe_sizes = list(map(int, input().split()))
+money_earned = 0
+
+# iterating based on no of customers(input)
+for i in range(int(input())):
+    
+    # storing the size preference of each customer along with the price 
+    size, price = map(int, input().split())
+    if size in shoe_sizes:
+        
+        # if the required shoe is available, then remove it from shoe_sizes and add the money
+        shoe_sizes.remove(size)
+        money_earned+=price
+print(money_earned)
