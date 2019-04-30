@@ -15,7 +15,7 @@ for j in range(int(n)):
     # storing input temporarily
     t = input()
     
-    # display -1 if given input is not present in the defaultdict
+    # displaying -1 if given input is not present in the defaultdict
     if len(r[t]) is 0:
         print(-1)
     
