@@ -1,6 +1,5 @@
 from collections import deque
 
-
 r = deque()
 for _ in range(int(input())):
     
@@ -11,3 +10,24 @@ for _ in range(int(input())):
     # Here, the extra element doesn't matter as we only take 0 and 1 elements
     eval("r.{0}({1})".format(*input().split()+['']))
 print(*r)
+
+
+'''
+from collections import deque
+
+r = deque()
+for i in range(int(input())):
+    p = input().split()
+    #print(list(p))
+    if p[0] == 'append':
+        r.append(p[1])
+    elif p[0] == 'appendleft':
+        r.appendleft(p[1])
+    elif p[0] == 'popleft':
+        r.popleft()
+    elif p[0] == 'pop':
+        r.pop()
+    else:
+        continue
+print(*r)
+'''
