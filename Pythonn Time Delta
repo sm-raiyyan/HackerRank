@@ -1,0 +1,22 @@
+from datetime import datetime as d
+
+# %a	Weekday as locale’s abbreviated name.
+# %d	Day of the month as a zero-padded decimal number.
+# %b	Month as locale’s abbreviated name.
+# %Y	Year with century as a decimal number.
+# %H	Hour (24-hour clock) as a zero-padded decimal number.
+# %M	Minute as a zero-padded decimal number.
+# %S	Second as a zero-padded decimal number.
+# %z	UTC offset in the form ±HHMM
+
+# datetime.strptime(date_string, format)
+# Returns a datetime corresponding to date_string, parsed according to format.
+
+# timedelta.total_seconds() - Returns the total number of seconds contained in the duration.
+
+format = '%a %d %b %Y %H:%M:%S %z'
+for i in range(int(input())):
+    t1 = d.strptime(input(), format)
+    t2 = d.strptime(input(), format)
+    time = (t1-t2).total_seconds()
+    print(int(abs(time)))
