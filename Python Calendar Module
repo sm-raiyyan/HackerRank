@@ -1,0 +1,10 @@
+import calendar
+
+input = list(map(int, input().split()))
+
+# storing the day number in day
+# input[0] = day; input[1] = month; input[2] = year
+day = calendar.weekday(input[2], input[0], input[1])
+
+# displaying the day in uppercase
+print(calendar.day_name[day].upper())
