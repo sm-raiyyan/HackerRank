@@ -1,0 +1,10 @@
+for i in range(int(input())):
+    
+    # taking inputs 
+    a, b = input().split()
+    try:
+        print(int(a)//int(b))
+        
+    # Every other exception comes under BaseException. So we use it.
+    except BaseException as e:
+        print("Error Code:", e)
